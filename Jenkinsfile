@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                gcc hello.c -o hello
+                sh 'gcc hello.c -o hello'
             }
         }
     }
